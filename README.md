@@ -4,15 +4,21 @@
 
 > Ne copiez pas le code de votre voisin, ça se voit.
 
-Nom/Prénom: `.......`
+Nom/Prénom: `PERRIN Antonin / ZIANI Shamsdine`
 
-Lien du codesandbox: `.......`
+Lien du codesandbox: `https://codesandbox.io/s/github/PolytechLyon/isi3-tp-javascript-mvc-ini-perrin_ziani_tp7`
 
 > Pour générer un codesandbox associé à votre code, [suivre cette doc](https://codesandbox.io/docs/importing#import-from-github).
 
 Vous pouvez tester le code directement sur votre navigateur, à condition de lancer un serveur local. Par exemple :
 
 ```python3 -m http.server 8000```
+
+Ou bien
+
+```npm install``` puis
+
+```npm start```
 
 Votre programme sera accessible depuis l'adresse `http://localhost:8000/index.html`.
 
@@ -28,11 +34,13 @@ Il a été inventé par [John Horton Conway](https://fr.wikipedia.org/wiki/John_
 1. Expliquer le design pattern MVC à l'aide d'un schéma à insérer directement ici.
 Utiliser un outils comme Dia pour le représenter. Je veux **votre** schéma, pas un de ceux qu'on peut trouver sur le net.
 
+![MVC](./assets/MVC.png)
+
 2. Expliquer ce pattern en complétant ce texte.
 
-Le pattern MVC, vise à découper le `.......`, de la `.......` et du `.......` afin de rendre le code plus `.......`.
-Les responsabilités ne sont alors plus `.......`.
-On peut ainsi changer l'aspect visuel de son application sans pour autant impacter le `.......`.
+Le pattern MVC, vise à découper le `contrôlleur`, de la `vue` et du `modèle` afin de rendre le code plus `modulaire`.
+Les responsabilités ne sont alors plus `centralisées`.
+On peut ainsi changer l'aspect visuel de son application sans pour autant impacter le `fonctionnement global`.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC.
 
@@ -50,8 +58,8 @@ Cela relève du design pattern Observer/Observable.
 
 1. Expliquer votre implémentation:
 
-L'usage d'un callback permet ici de `.......` afin de dire à la _View_ de se redessiner.
-L'objet _Model_ n'a pas de lien avec `.......` pourtant grâce à la `.......` il peut notifier la `.......`.
+L'usage d'un callback permet ici de `réaliser des actions de façon synchrone` afin de dire à la _View_ de se redessiner.
+L'objet _Model_ n'a pas de lien avec `la Vue`, pourtant grâce à la `callback importée` il peut notifier la `vue`.
 
 2. Insérer ici un UML montrant le pattern Observer/Observable lié aux objets de ce TP.
 
