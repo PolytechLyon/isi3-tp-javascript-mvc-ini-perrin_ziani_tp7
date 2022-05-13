@@ -15,8 +15,6 @@ export const initView = () => {
 };
 
 export const updateView = (w, h) => {
-  canvas = document.createElement("canvas");
-  context = canvas.getContext("2d");
   canvas.setAttribute("height", h * CELL_SIZE + h - 1);
   canvas.setAttribute("width", w * CELL_SIZE + w - 1);
 };
@@ -33,5 +31,6 @@ export const startButton = document.getElementById("start");
 export const stopButton = document.getElementById("stop");
 export const resetButton = document.getElementById("reset");
 export const submitButton = document.getElementById("submit");
-export const tailleGrille = document.getElementById("tailleGrille");
+export const tailleGrilleX = document.getElementById("tailleGrilleX");
+export const tailleGrilleY = document.getElementById("tailleGrilleY");
 

@@ -14,32 +14,25 @@ export class Model {
   }
 
   init() {
-    
     this.state = [];
     for(let i=0;i<this.width;i++){
-      let stateX = [];
+      let state = [];
       for(let j=0;j<this.height;j++){
-        stateX.push(CELL_STATES.NONE);
+        state.push(CELL_STATES.NONE);
       }
-      this.state.push(stateX);
+      this.state.push(state);
     }
-    // this.state = new Array(this.height).fill(CELL_STATES.NONE).map(() => new Array(this.width).fill(CELL_STATES.NONE));
-    // for(let i=0;i<this.width;i++){
-    //   for(let j=0;j<this.height;j++){
-    //     console.log("state : " + this.state[i][j]);
-    //   }
-    // }
     DEFAULT_ALIVE_PAIRS.forEach(([x, y]) => {
       this.state[y][x] = CELL_STATES.ALIVE;
     });
     this.updated();
   }
 
-  updateGridSize(gridValue) {
+  updateGridSize(canvasX, canvasY) {
     this.stop();
-    this.width = gridValue;
-    this.height = gridValue;
-    updateView(this.width, this.height);
+    this.width = canvasX;
+    this.height = canvasY;
+    updateView(Number(canvasX), Number(canvasY));
     this.init();
   }
 
