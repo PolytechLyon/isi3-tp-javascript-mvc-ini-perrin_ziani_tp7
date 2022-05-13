@@ -14,6 +14,13 @@ export const initView = () => {
   canvas.setAttribute("width", GAME_SIZE * CELL_SIZE + GAME_SIZE - 1);
 };
 
+export const updateView = (w, h) => {
+  canvas = document.createElement("canvas");
+  context = canvas.getContext("2d");
+  canvas.setAttribute("height", h * CELL_SIZE + h - 1);
+  canvas.setAttribute("width", w * CELL_SIZE + w - 1);
+};
+
 export const drawGame = model => {
   model.state.forEach((row, rowIndex) => {
     row.forEach((value, columnIndex) => {
@@ -21,3 +28,10 @@ export const drawGame = model => {
     });
   });
 };
+
+export const startButton = document.getElementById("start");
+export const stopButton = document.getElementById("stop");
+export const resetButton = document.getElementById("reset");
+export const submitButton = document.getElementById("submit");
+export const tailleGrille = document.getElementById("tailleGrille");
+

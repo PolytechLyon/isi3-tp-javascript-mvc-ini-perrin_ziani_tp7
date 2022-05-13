@@ -10,3 +10,5 @@ const model = new Model();
 model.init();
 drawGame(model);
 controller(model);
+
+
