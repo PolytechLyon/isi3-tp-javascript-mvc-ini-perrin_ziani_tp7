@@ -1,6 +1,6 @@
-export const GAME_SIZE = 20;
-export const CELL_SIZE = 20;
-export const RENDER_INTERVAL = 1000;
+export const GAME_SIZE = 100;
+export const CELL_SIZE = 10;
+export const RENDER_INTERVAL = 100;
 
 export const CELL_STATES = {
   NONE: "darkgrey",
@@ -15,13 +15,13 @@ export const CELL_STATES = {
 // ];
 
 export const DEFAULT_ALIVE_PAIRS = [
-  [3, 4],
-  [5, 6],
-  [7, 1],
-  [7, 2],
-  [8, 5],
-  [4, 4],
-  [5, 4],
-  [6, 4],
-  [8, 4]
+  [3, 84],
+  [3, 87],
+  [4, 83],
+  [5, 83],
+  [6, 83],
+  [6, 84],
+  [6, 85],
+  [6, 86],
+  [5, 87]
 ];
