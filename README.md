@@ -20,7 +20,7 @@ Ou bien
 
 ```npm start```
 
-Votre programme sera accessible depuis l'adresse `http://localhost:8000/index.html`.
+Votre programme sera accessible depuis l'adresse `http://localhost:8000/index.html` (ou bien `http://localhost:1234/`).
 
 
 
@@ -36,13 +36,19 @@ Utiliser un outils comme Dia pour le représenter. Je veux **votre** schéma, pa
 
 ![MVC](./assets/MVC.png)
 
+Le diagramme du dessus décrit notre implémentation du pattern MVC pour le jeu de la vie.
+
+Le diagramme du dessous illustre le pattern MVC original sans modification, il fait office d'exemple.
+
 2. Expliquer ce pattern en complétant ce texte.
 
-Le pattern MVC, vise à découper le `contrôlleur`, de la `vue` et du `modèle` afin de rendre le code plus `modulaire`.
+Le pattern MVC, vise à découper le `contrôleur`, de la `vue` et du `modèle` afin de rendre le code plus `modulaire`.
 Les responsabilités ne sont alors plus `centralisées`.
 On peut ainsi changer l'aspect visuel de son application sans pour autant impacter le `fonctionnement global`.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC.
+
+Il faut choisir d'implémenter ce pattern dès que l'on développe des applications web requêtant des sources de données. Cela offre plus de liberté sur les actions et les modifications bien qu'il nécessite beaucoup plus de fichiers pour l'implémentation. Cependant, pour un jeu de la vie, le pattern MVVM aurait été plus adapté dans la mesure où l'on a qu'une seule page web.
 
 ## À faire (obligatoire)
 
@@ -63,6 +69,8 @@ L'objet _Model_ n'a pas de lien avec `la Vue`, pourtant grâce à la `callback i
 
 2. Insérer ici un UML montrant le pattern Observer/Observable lié aux objets de ce TP.
 
+![MVC](./assets/ObserverObservable.png)
+
 ## Optionnel
 
 > Si vous voulez apprendre d'autres choses
@@ -73,4 +81,7 @@ L'objet _Model_ n'a pas de lien avec `la Vue`, pourtant grâce à la `callback i
 ## :warning: À rendre
 
 - Une URL de codesandox pointant sur votre projet github afin que je puisse voir et tester le code.
+
+`https://codesandbox.io/s/github/PolytechLyon/isi3-tp-javascript-mvc-ini-perrin_ziani_tp7`
+
 - Le rapport complet.
