@@ -36,6 +36,10 @@ Utiliser un outils comme Dia pour le représenter. Je veux **votre** schéma, pa
 
 ![MVC](./assets/MVC.png)
 
+Le diagramme du dessus décrit notre implémentation du pattern MVC pour le jeu de la vie.
+
+Le diagramme du dessous illustre le pattern MVC original sans modification, il fait office d'exemple.
+
 2. Expliquer ce pattern en complétant ce texte.
 
 Le pattern MVC, vise à découper le `contrôleur`, de la `vue` et du `modèle` afin de rendre le code plus `modulaire`.
@@ -77,4 +81,7 @@ L'objet _Model_ n'a pas de lien avec `la Vue`, pourtant grâce à la `callback i
 ## :warning: À rendre
 
 - Une URL de codesandox pointant sur votre projet github afin que je puisse voir et tester le code.
+
+`https://codesandbox.io/s/github/PolytechLyon/isi3-tp-javascript-mvc-ini-perrin_ziani_tp7`
+
 - Le rapport complet.
