@@ -18,11 +18,8 @@ export const controller = model => {
     let canvasY = tailleGrilleY.value;
     // On vérifie que des valeurs sont passées en entrée
     if(canvasX !== '' && canvasY !== ''){
-      // S'il n'y a pas de cases impactées par le changement
-      if(model.resizable(canvasX, canvasY)){
         // On redimensionne la grille
         model.updateGridSize(canvasX, canvasY);
-      }
     }
   }
 };

@@ -30,12 +30,14 @@ export class Model {
   }
 
   // Modifie la taille de la grille
-  updateGridSize(canvasX, canvasY) {
-    this.stop();
-    this.width = canvasX;
-    this.height = canvasY;
-    updateView(Number(canvasX), Number(canvasY));
-    this.init();
+  updateGridSize(canvasX, canvasY) {      
+    if(this.resizable(canvasX, canvasY)){
+      this.stop();
+      this.width = canvasX;
+      this.height = canvasY;
+      updateView(Number(canvasX), Number(canvasY));
+      this.init();
+    }
   }
 
   // Fonction appelée pour mettre à jour une cellule
